@@ -1,0 +1,84 @@
+/*!Style.css*/
+@charset 'utf-8';
+@import 'includes/ress.less';
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+@c-text: #5b4f3f;
+@c-base: #fef7f1;
+@c-link-1: #00b54b;
+@c-link-2: #e430cb;
+@c-link-3: #03379e;
+
+html {
+	background-color: @c-base;
+	
+}
+body {
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-size: 12px;
+	line-height: 1.7;
+	color: @c-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0.5em;
+}
+
+.wrapper {
+	margin: 3em 1em;
+	max-width: 800px;
+}
+@media screen and (min-width:800px) {
+	.wrapper {
+		margin: 3em auto;
+	}
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 3em;
+}
+
+.img-box {
+	margin: 3em 0;
+}
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	font-size: 16px;
+	color: @c-link-1;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.sns-list a{
+	color: @c-link-2;
+}
+.shops-list a{
+	color: @c-link-3;
+}
+h3 {
+	color: lighten(@c-text, 40%);
+}
+
+@media screen and (min-width:480px) {
+	.box-outer {
+		display: flex;
+	}
+	.box-inner {
+		width: 30%;
+		&:not(:last-child) {
+			margin-right: 2%;
+		}
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
