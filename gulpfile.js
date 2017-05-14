@@ -7,7 +7,7 @@ var cssmin = require('gulp-cssmin');
 
 gulp.task('default', ['browser-sync'], function () {
   gulp.watch("./less/**/*.less", ['less']);
-  gulp.watch("./*.html", ['bs-reload']);
+  gulp.watch("./**/*.html", ['bs-reload']);
   gulp.watch("./css/**/*.css", ['bs-reload']);
 });
 gulp.task('browser-sync', function() {
