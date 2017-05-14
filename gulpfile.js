@@ -10,21 +10,24 @@ gulp.task('default', ['browser-sync'], function () {
   gulp.watch("./**/*.html", ['bs-reload']);
   gulp.watch("./css/**/*.css", ['bs-reload']);
 });
-gulp.task('browser-sync', function() {
+
+gulp.task('browser-sync', function () {
   browserSync.init({
-	server: {
-	  index: "index.html"
-	}
+    server: {
+      index: "index.html"
+    }
   });
 });
+
 gulp.task('bs-reload', function () {
-    browserSync.reload();
+  browserSync.reload();
 });
+
 gulp.task('less', function () {
   return gulp.src('./less/**/*.less')
     .pipe(less({
       plugins: [autoprefix]
     }))
-	.pipe(cssmin())
+    .pipe(cssmin())
     .pipe(gulp.dest('./css'));
 });
