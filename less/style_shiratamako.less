@@ -1,0 +1,93 @@
+@charset 'utf-8';
+@import 'includes/ress.less';
+html {
+	background: #f9f9dc;
+}
+
+/** Box */
+.wrapper {
+	background: #fff;
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+header,
+footer,
+.link-box {
+	text-align: center;
+}
+.link-box {
+	margin-top: 50px;
+}
+.shiratamako-box {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/** Intro */
+.intro-box {
+	margin-top: 25px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #662;
+	text-align: center;
+}
+/** Img */
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+a img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.shiratamako-box-inner {
+	opacity: 0.4;
+	&.tetete,
+	&.ashi{}
+	&.runrun{
+		margin-top: -15px;
+	}
+	&.ashi {
+		margin-top: -100px;
+	}
+	&.chira,
+	&.yonhon,
+	&.mu{
+		text-align: right;
+	}
+	&.chira {
+		margin-top: -50px;
+	}
+	&.yonhon {
+		margin-top: -10px;
+	}
+	&.mu{
+		margin-top: -60px;
+	}
+}
+
+/** Footer */
+.footer-becolomochicom-box {
+	margin-bottom: 20px;
+}
+.footer-copyright {
+	font-size: 10px;
+	color: #666;
+}
+.pagetop-btn {
+	position: relative;
+	top: 0;
+	&:hover {
+		top: 0;
+	}
+	&:focus {
+		outline: none;
+		top: 1px;
+	}
+}
